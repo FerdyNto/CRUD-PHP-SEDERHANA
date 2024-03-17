@@ -50,3 +50,47 @@ section#login form input[type=submit]{
     padding: 12px;
 }
 /* /login */
+
+/* dashboard */
+main#dashboard{
+    display: flex;
+}
+.foto-profil{
+    width: 100px;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+main#dashboard aside{
+    background-color:midnightblue;
+    min-height: 100vh;
+    width: 250px;
+    color: white;
+}
+
+main#dashboard aside div{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main#dashboard div{
+    width: 100%;
+}
+
+main#dashboard div nav{
+    background-color: darkblue;
+    color: white;
+    padding: 12px;
+}
+
+main#dashboard aside div a{
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 12px;
+    width: 100%;
+}
+/* /dashboard */
