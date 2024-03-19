@@ -94,3 +94,34 @@ main#dashboard aside div a{
     width: 100%;
 }
 /* /dashboard */
+
+/* alert */
+.alert-message{
+    width: 80%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 12px 30px;
+    transition: all ease-out 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alert-error{
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+
+.alert-success{
+    background-color: lightgreen;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+#alert.fadeout {
+    opacity: 0;
+}
+/* /alert */

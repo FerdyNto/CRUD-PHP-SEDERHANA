@@ -1,10 +1,27 @@
 <?php
 session_start();
-include "../config/function.php";
-notification();
+include "../init.php";
+// cek apakah sudah login
+// kalau sudah login arahkan ke halaman dashboard/index.php
 if (isset($_SESSION['username'])) {
     header("location: ../dashboard/index.php");
 }
+
+// cek apakah ada pesan error
+// kalau ada tampikan pesannya
+if (isset($_SESSION['error_message'])) :
+?>
+    <div class="alert-message alert-error" id="alert">
+        <ol>
+            <?php
+            foreach ($_SESSION['error_message'] as $error) :
+                echo "<li>" . $error . "</li>";
+            endforeach;
+            ?>
+        </ol>
+    </div>
+<?php
+endif;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +35,7 @@ if (isset($_SESSION['username'])) {
 </head>
 
 <body>
+
     <main id="login">
         <section id="login">
             <h1>Login Dashboard Blog</h1>
@@ -35,6 +53,8 @@ if (isset($_SESSION['username'])) {
             </form>
         </section>
     </main>
+
+    <script src="../public/js/script.js"></script>
 </body>
 
 </html>

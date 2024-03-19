@@ -1,11 +1,21 @@
 <?php
 session_start();
-include "../config/function.php";
-notification();
+include "../init.php";
 
+// cek apakah sudah login
 if (!isset($_SESSION['username'])) {
     header("location:../auth/login.php");
 }
+
+// cek pesan sukses
+if (isset($_SESSION['success_message'])) :
+    $success = $_SESSION['success_message'];
+?>
+    <div class="alert-message alert-success" id="alert">
+        <?= $success; ?>
+    </div>
+<?php
+endif;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +34,7 @@ if (!isset($_SESSION['username'])) {
             </section>
         </div>
     </main>
-
+    <script src="../public/js/script.js"></script>
 </body>
 
 </html>
