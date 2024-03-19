@@ -1,9 +1,9 @@
 <?php
 session_start();
-include "config/function.php";
+include "../config/function.php";
 notification();
 if (isset($_SESSION['username'])) {
-    header("location:dashboard/index.php");
+    header("location: ../dashboard/index.php");
 }
 ?>
 <!DOCTYPE html>
@@ -14,14 +14,14 @@ if (isset($_SESSION['username'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 
 <body>
     <main id="login">
         <section id="login">
             <h1>Login Dashboard Blog</h1>
-            <form action="core/login.php" method="POST">
+            <form action="../core/login.php" method="POST">
                 <div>
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username">

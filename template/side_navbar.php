@@ -1,7 +1,7 @@
 <aside>
     <div>
         <img src="../public/img/profil.jpg" alt="Foto Profil" class="foto-profil">
-        <h3>Ferdy Herdianto</h3>
+        <h3><?= $_SESSION['username'] ?></h3>
     </div>
     <div>
         <a href="">Dashboard</a>

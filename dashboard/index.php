@@ -4,7 +4,7 @@ include "../config/function.php";
 notification();
 
 if (!isset($_SESSION['username'])) {
-    header("location:../login.php");
+    header("location:../auth/login.php");
 }
 ?>
 <!DOCTYPE html>
