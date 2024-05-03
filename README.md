@@ -1,5 +1,8 @@
 Repositori ini baik di coba bagi yang baru mulai pemrograman terutama di program web dengan bahasa pemrograman PHP
 
+Program ini mengoparasikan yang namanya CRUD (Create, Read, Update, Delete), yang mana ini adalah operasi dasar pada setiap aplikasi yg ada.
+Sebagai studi kasus disini saya membuat CRUD untuk manajemen blog.
+
 1. Silahkan download dulu repository ini
 2. ekstrak mengguakan winrar
 3. lalu simpan di webserver kalian (XAMPP)
