@@ -6,4 +6,6 @@ Repositori ini baik di coba bagi yang baru mulai pemrograman terutama di program
 4. import file database.sql ke dalam DBMS kalian
 5. login dengan username: admin1 dan password: abcd
 
-   SELAMAT MENCOBA!!!
+Jika ingin mengedit source code, buka mengguanakn code editor kesayangan kalian
+
+SELAMAT MENCOBA!!!
